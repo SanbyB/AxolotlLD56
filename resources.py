@@ -17,14 +17,13 @@ IMAGE_GROUND = pygame.image.load(os.path.join("Graphics", "ground.png"))
 
 STORE_SHEET = Animation(IMAGE_STORE, 0, 0)
 
-FONT = 0
-FONT = pygame.font.Font(os.path.join("Graphics", "ARCADECLASSIC.TTF"), 72)
-SMALLER_FONT = pygame.font.Font(os.path.join("Graphics", "ARCADECLASSIC.TTF"), 36)
-EVEN_SMALLER_FONT = pygame.font.Font(os.path.join("Graphics", "ARCADECLASSIC.TTF"), 28)
+FONT = pygame.font.Font(os.path.join("Graphics", "SparkyStonesRegular.ttf"), 44)
+SMALLER_FONT = pygame.font.Font(os.path.join("Graphics", "SparkyStonesRegular.ttf"), 36)
+EVEN_SMALLER_FONT = pygame.font.Font(os.path.join("Graphics", "SparkyStonesRegular.ttf"), 28)
 
 
 AX_SHEET = SpriteSheet(pygame.image.load(os.path.join("Graphics", "axolotl1.png")), 4, 1)
-AX_BREATHING = Animation(AX_SHEET, 0, 0.1)
+AX_BREATHING = Animation(AX_SHEET, 0, 0.005)
 # AX_DANCING = Animation(AX_SHEET, 1, 0.2)
 
 WORM_SHEET = SpriteSheet(pygame.image.load(os.path.join("Graphics", "worm.png")), 4, 1)

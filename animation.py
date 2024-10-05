@@ -17,7 +17,7 @@ class Animation:
             self.frame += self.speed
         return
 
-    def draw(self, surface, x, y, width, height, direction):
+    def draw(self, surface, x, y, width, height, direction=False):
         frame = floor(self.frame) % self.spritesheet.xFrames
         frame = self.spritesheet.xFrames - 1 - frame if direction else frame
         self.spritesheet.draw(

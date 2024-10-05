@@ -7,8 +7,9 @@ AX_STATES = ["breathing", "dancing", "damaged"]
 class Axolotl:
     def __init__(self) -> None:
         self.name = ""
-        self.x = SCREEN_WIDTH / 2
-        self.y = SCREEN_HEIGHT / 2
+        self.width, self.height = 200, 200
+        self.x = SCREEN_WIDTH / 2 - self.width/2
+        self.y = SCREEN_HEIGHT / 2 + 100
         self.vx = 0
         self.vy = 0
         self.ax = 0
@@ -34,7 +35,8 @@ class Axolotl:
 
     def render(self, screen):
         if self.state == "breathing":
-            AX_BREATHING.draw(screen, self.x, self.y, 50, 50)
+            AX_BREATHING.draw(screen, self.x, self.y, self.width, self.height)
+            AX_BREATHING.update()
 
         #todo display name
 
