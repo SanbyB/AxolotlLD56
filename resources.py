@@ -9,6 +9,8 @@ SCREEN_WIDTH, SCREEN_HEIGHT = 650, 650
 
 IMAGE_AX = pygame.image.load(os.path.join("Graphics", "ax.png"))
 
+IMAGE_BACK = pygame.image.load(os.path.join("Graphics", "backButton.png"))
+
 
 IMAGE_MEXICO = pygame.image.load(os.path.join("Graphics", "mexico.png"))
 IMAGE_POND = pygame.image.load(os.path.join("Graphics", "pond.png"))
@@ -23,8 +25,11 @@ EVEN_SMALLER_FONT = pygame.font.Font(os.path.join("Graphics", "SparkyStonesRegul
 
 
 AX_SHEET = SpriteSheet(pygame.image.load(os.path.join("Graphics", "axolotl1.png")), 4, 1)
-AX_BREATHING = Animation(AX_SHEET, 0, 0.005)
+AX_BREATHING = Animation(AX_SHEET, 0, 0.06)
 # AX_DANCING = Animation(AX_SHEET, 1, 0.2)
+
+BIG_FISH_SHEET = SpriteSheet(pygame.image.load(os.path.join("Graphics", "bigFish.png")), 4, 1)
+BIG_FISH_ATTACKING = Animation(BIG_FISH_SHEET, 0, 0.06)
 
 WORM_SHEET = SpriteSheet(pygame.image.load(os.path.join("Graphics", "worm.png")), 4, 1)
 WORM_WIGGLE = Animation(WORM_SHEET, 0, 0.1)
